@@ -13,6 +13,6 @@ public class LoginController {
 	@PostMapping("/login")
 	public ResponseEntity<?> login(@RequestBody LoginDto request){
 		System.out.println(request);
-		return ResponseEntity.ok().body("Success");
+		return ResponseEntity.ok().body(request);
 	}
 }
